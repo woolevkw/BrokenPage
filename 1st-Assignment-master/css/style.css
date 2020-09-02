@@ -1,0 +1,115 @@
+/*--Remember the cascade: Later styles override earlier ones and more specific styles override more general ones.--*/
+body {
+  color: #444;
+  font-size: 16px;
+  font-family: 'Gentium Book Basic', sans-serif;
+}
+p {
+  margin-bottom: .67em;
+}
+nav, footer {
+  background-color: #84a2f7;
+}
+footer {
+  text-align: center;
+  padding: .5em 0 .3em 0;
+  color: #ff4343;
+}
+/*-- Main Menu Styles--*/
+nav ul {
+  display: flex;
+  font-size: 115%;
+  font-weight: 500;
+  justify-content: space-between;
+  list-style: none;
+  padding: 1em;
+}
+nav a:link, nav a:visited {
+  color: #ff4343;
+  text-decoration: none;
+}
+nav a:hover, nav a:active  {
+  color: #420420;
+  text-decoration: underline;
+}
+nav a.active {
+  color: #ff4343;
+}
+/*-- Hero Unit Styles--*/
+header {
+  width: 510px;
+  margin: 2em auto;
+}
+header img {
+  width: 100%;
+  margin: 0 auto;
+}
+header h1 {
+  margin-top: 0em;
+  margin-bottom: 0em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 auto;
+  text-align: center;
+  font-weight: 900;
+  font-style: 'Lato', sans-serif;
+  font-size: 30px;
+}
+.small {
+  margin: right;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #999999;
+}
+p:first-child:first-letter {
+  font-size: 80px;
+  padding-right: 8px;
+  float:left;
+  line-height: 0.7;
+}
+/*-- Article Styles--*/
+article {
+  width: 768px;
+  margin: 2em auto;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+article figure {
+  float: right;
+  width: 39%;
+  margin: 0 0 1.25em 1.25em;
+}
+article figcaption {
+  font-family: "fantasy", sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+}
+.pagination {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  width: 96%;
+}
+a.button {
+  border: 1px solid #ff4343;
+  padding: .4em 1em .4em 1em;
+  text-decoration: none;
+  color: #888;
+  border-radius: 200px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: #ff4343;
+  font-size: 80%;
+}
+a.button:hover, a.button:active {
+  border: 1px solid #84a2f7;
+  text-decoration: none;
+  color: #222;
+}
+/*-- changes header and article width on small screens --*/
+@media screen and (max-width: 768px) {
+  header {width: 96%;}
+  article {width: 96%;}
+}
